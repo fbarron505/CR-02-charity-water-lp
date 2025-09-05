@@ -193,13 +193,69 @@ body {
 }
 /* ...existing code... */
 
-/* Responsive images for all screen sizes */
-img, .logo, .hero-img, .supporter-icon {
-    max-width: 100%; /* Image won't overflow its container */
+/* Make images and containers scale smoothly */
+img {
+    max-width: 100%; /* Image will not overflow its container */
     height: auto;    /* Keeps image aspect ratio */
 }
 
-/* Responsive layout for screens 600px and wider */
-@media screen and (min-width: 600px) {
-    /* ...responsive styles here... */
+/* Use relative units for font sizes for better scaling */
+body {
+    font-size: 1rem; /* Base font size */
 }
+
+/* Make header and main sections flexible */
+.header, .supporter-section, .hero-content {
+    box-sizing: border-box; /* Includes padding in width calculations */
+    width: 100%;            /* Full width on small screens */
+}
+
+/* Adjust padding and font sizes for smaller screens */
+@media screen and (max-width: 700px) {
+    .header, .supporter-section {
+        padding: 18px 10px;
+    }
+    .hero-content {
+        left: 10px;
+        top: 12px;
+        padding: 16px 10px;
+        max-width: 98vw;
+        font-size: 1rem; /* Slightly smaller text */
+    }
+    .brand {
+        font-size: 1.3rem; /* Smaller brand text */
+    }
+    .hero-content h1 {
+        font-size: 1.3rem; /* Smaller heading */
+    }
+    .donate-section {
+        padding: 28px 0 36px 0;
+    }
+    .donate-options {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 8px;
+        padding: 10px 8px;
+    }
+    .donate-btn {
+        width: 100%; /* Buttons fill container */
+        font-size: 1rem;
+        padding: 10px 0;
+    }
+    .arrow {
+        display: none; /* Hide arrow on mobile */
+    }
+    .supporter-content {
+        flex-direction: column; /* Stack icon and text */
+        gap: 8px;
+        text-align: center;
+    }
+}
+
+/* Extra: Make sure main content doesn't overflow */
+main {
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* ...existing code... */
