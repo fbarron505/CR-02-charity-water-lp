@@ -45,3 +45,174 @@
     </section>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charity: Water Landing Page</title>
+  <style>
+    /* Reset some defaults */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+
+    header img {
+      height: 30px; /* Placeholder logo size */
+    }
+
+    .btn-give {
+      background-color: #f7c600;
+      color: #000;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    /* Hero section */
+    .hero {
+      position: relative;
+      text-align: left;
+      color: #fff;
+    }
+
+    .hero img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .hero-text {
+      position: absolute;
+      top: 20%;
+      left: 5%;
+      max-width: 500px;
+    }
+
+    .hero-text h1 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    .hero-text p {
+      font-size: 1rem;
+    }
+
+    /* Donation options */
+    .donate-section {
+      background-color: #70a6b1;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .donate-buttons {
+      display: inline-flex;
+      border: 2px solid white;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 15px;
+    }
+
+    .donate-buttons button {
+      background: #f7c600;
+      border: none;
+      padding: 15px 30px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .donate-buttons button:hover {
+      background: #e0b200;
+    }
+
+    .donate-section p {
+      color: white;
+      font-size: 0.9rem;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: #fff;
+      color: #333;
+      font-size: 0.9rem;
+    }
+
+    footer img {
+      height: 25px;
+      display: block;
+      margin: 0 auto 10px;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 600px) {
+      .hero-text {
+        position: static;
+        background: rgba(0, 0, 0, 0.6);
+        padding: 20px;
+        margin-top: -5px;
+      }
+
+      .hero-text h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="https://via.placeholder.com/120x30?text=Logo" alt="Charity: Water Logo">
+    <a href="#" class="btn-give">GIVE</a>
+  </header>
+
+  <!-- Hero section -->
+  <section class="hero">
+    <img src="https://via.placeholder.com/1200x500?text=Hero+Image" alt="Smiling child with clean water">
+    <div class="hero-text">
+      <h1>Better Water Can Change Everything — Be the Reason Why.</h1>
+      <p>Your donation brings clean and safe drinking water to communities in need — 
+         and you can follow every step, from the first sip to the lives transformed. 
+         Real impact. Real stories. In real time.</p>
+    </div>
+  </section>
+
+  <!-- Donation section -->
+  <section class="donate-section">
+    <div class="donate-buttons">
+      <button>DONATE ONCE</button>
+      <button>MONTHLY</button>
+    </div>
+    <p>Click and choose an amount to make your difference</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <img src="https://via.placeholder.com/40?text=Icon" alt="Charity: Water Icon">
+    <p>Become a charity: water SUPPORTER</p>
+  </footer>
+
+</body>
+</html>
